@@ -6,3 +6,8 @@ test:
 	./$(DW_BIN)
 clean:
 	$(RM) $(DW_BIN)
+
+install:
+	cp $(DW_BIN) /usr/local/bin
+	mkdir -p /etc/diceware
+	cp eff_large_wordlist.txt /etc/diceware/

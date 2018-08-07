@@ -5,6 +5,7 @@
 #include <ctype.h>
 
 #define WORD_LIST "eff_large_wordlist.txt"
+#define ETC_WORD_LIST "/etc/diceware/eff_large_wordlist.txt"
 #define MAX_WORDS 10000
 
 void show_help() {
@@ -52,10 +53,15 @@ int main(int argc, char **argv) {
   }
 
   FILE* f = fopen(WORD_LIST, "r");
+
   if (f == NULL) {
-    printf("Unable to open word list: %s\n", WORD_LIST);
-    exit(1);
+    f = fopen(ETC_WORD_LIST, "r");
+    if (f == NULL) {
+      printf("Unable to open word list: %s\n", WORD_LIST);
+      exit(1);
+    }
   }
+
   char* dice = (char*) calloc(5, sizeof(char));
   char* word = (char*) calloc(10, sizeof(char));
   char** words = (char**) calloc(MAX_WORDS, sizeof(char**));
