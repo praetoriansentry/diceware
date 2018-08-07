@@ -1,0 +1,3 @@
+[[https://travis-ci.com/praetoriansentry/diceware.svg?branch=master]]
+
+Simple tool to generate a diceware passphrase
