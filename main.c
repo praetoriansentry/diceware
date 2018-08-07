@@ -15,15 +15,12 @@ int main(int argc, char **argv) {
       n_flag = atoi(optarg);
       break;
     case 'p':
-      printf("%s\n", optarg);
       p_flag = atoi(optarg);
       break;
     default:
       abort ();
     }
   }
-
-  printf("%d:%d\n", n_flag, p_flag);
 
   FILE* f = fopen(WORD_LIST, "r");
   if (f == NULL) {
