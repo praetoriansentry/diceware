@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <getopt.h>
 
 #define WORD_LIST "eff_large_wordlist.txt"
 #define MAX_WORDS 10000
