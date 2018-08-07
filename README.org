@@ -1,3 +1,23 @@
 [[https://travis-ci.com/praetoriansentry/diceware.svg?branch=master]]
 
 Simple tool to generate a diceware passphrase
+
+#+BEGIN_SRC
+Diceware Passphrase Generator
+
+Basic usage:
+	$ diceware
+
+Optional Arguments:
+	-w	The number of words to use in each passphrase
+	-p	The number of passphrases to generate
+	-d	The delimiter to use between words. Defaults to space.
+	-c	Capitalize the first letter of each word.
+
+Example:
+	$ diceware -w 5 -p 1 -c -d ''
+#+END_SRC
+
+The wordlist in this code base comes from [[https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases][EFF]]. It's the long list
+meant for use with 5 dice. The wordlist is in its original form and
+copyright info can be found [[https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases][here]].
