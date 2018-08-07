@@ -20,4 +20,4 @@ Example:
 
 The wordlist in this code base comes from [[https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases][EFF]]. It's the long list
 meant for use with 5 dice. The wordlist is in its original form and
-copyright info can be found [[https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases][here]].
+copyright info can be found [[https://www.eff.org/copyright][here]].
